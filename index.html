@@ -9,7 +9,7 @@
     <body>
         <nav class="navbar bg-light fixed-top">
             <div class="container-fluid">
-                <a class="navbar-brand" href="./index.html"><img class='logo' src="./surflogo.png" alt="Logo" width="30" height="24" >Surf &#38; Turf</a>
+                <a class="navbar-brand" href="./index"><img class='logo' src="./surflogo.png" alt="Logo" width="45" height="35" >Surf &#38; Turf</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -21,16 +21,19 @@
                 <div class="offcanvas-body">
                     <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                            <a class="nav-link active" aria-current="page" href="./index">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./login.html">Login</a>
+                            <a class="nav-link" href="./login">Login</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Menu</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Activities
                             </a>
-                        <ul class="dropdown-menu dropdown-menu-dark">
+                        <ul class="dropdown-menu dropdown-menu-light">
                             <li><a class="dropdown-item" href="#">Action</a></li>
                             <li><a class="dropdown-item" href="#">Another action</a></li>
                             <li>
@@ -44,7 +47,45 @@
                 </div>
             </div>
         </nav>
-
+        
+        <div class="home_top">
+            <h1 class="welcome">Surf &#38; Turf!</h1>
+        </div>
+        
+        <div class="flex_container">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">New Customers</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Create New Account</h6>
+                    <p class="card-text">New customers can create an account here to order food, view discounts, shop for souvenirs, or check out local attractions.</p>
+                    <button class="button"><span><a class ='links' href="#">Create Account</a></span></button>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Existing Customers</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Login to Account</h6>
+                    <p class="card-text">Welcome back friends! Login to your existing account to browse our souvenirs or check out the discounts for your visit with us again!</p>
+                    <button class="button"><span><a class ='links' href="./login">Create Account</a></span></button>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Food Menu</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Explore Food</h6>
+                    <p class="card-text">Here you can browse our delicious selection of food, drinks, and appetizers. You can even take some home for later.</p>
+                    <button class="button"><span><a class ='links' href="#">Create Account</a></span></button>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Souvenir Shop</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Purchase Merchandise</h6>
+                    <p class="card-text">Don't want to forget the amazing visit here at Surf &#38; Turf? Take home a few of our awesome merchandise to remember your visit!</p>
+                    <button class="button"><span><a class ='links' href="#">Create Account</a></span></button>
+                </div>
+            </div>
+    </div>
 
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
