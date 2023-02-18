@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <title>Trivia Game</title>
+        <meta name='viewport' content='device-width' initial-scale='1.0' />
+        <link rel="stylesheet" href="../../static/projects.css" />
+        <link rel="stylesheet" href="../../static/blog.css" />
+        <script src="https://kit.fontawesome.com/f08815db66.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="area">
+            
+
+            <ul class="circles">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+            <a class="project-buttons" href="../projects.html"><span>Back to Projects</span></a>
+            <h1 class="blog-container">Computer Science Trivia Game</h1>
+
+            <div class="slideshow-container">
+
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 3</div>
+                    <img src="../../project_pictures/flask_trivia.png" style="width:100%">
+                </div>
+                
+                <div class="mySlides fade">
+                    <div class="numbertext">2 / 3</div>
+                    <img src="../../project_pictures/flask_trivia_answers.png" style="width:100%">
+                </div>
+                
+                <div class="mySlides fade">
+                    <div class="numbertext">3 / 3</div>
+                    <img src="../../project_pictures/flask_trivia_code2.png" style="width:100%">
+                </div>
+                
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                
+                </div>
+                <br>
+                
+                <div style="text-align:center">
+                  <span class="dot" onclick="currentSlide(1)"></span> 
+                  <span class="dot" onclick="currentSlide(2)"></span> 
+                  <span class="dot" onclick="currentSlide(3)"></span> 
+                </div>
+
+                <div class="desc-container">
+                    <div class="block">
+                        <h2 class="block-header">Objective:</h2>
+                        <p class="block-para">this project was meant to solidify my understanding of how to call an API with a Flask application. Asks questions and takes input to grade how well they answered.</p>
+                    </div>
+
+                    <div class="block">
+                        <h2 class="block-header">What I Learned:</h2>
+                        <p class="block-para">Setting up the API call was fairly simple but I did have issues with shuffling the questions that were requested from the API each time they played a game. Incorporating that into a Flask application was a lot of fun and I feel I've gained a good understanding of API calls with Flask.</p>
+                    </div>
+
+                    <div class="block">
+                        <h2 class="block-header">Hashtags:</h2>
+                        <p class="block-para">Flask, API, Python</p>
+                    </div>
+
+                    <div class="block">
+                        <h2 class="block-header">Github Repo:</h2>
+                        <span>Link: </span><a class="repo-link" href="https://github.com/krosentrater/AFS-200/tree/main/Week7/trivia" target="new">Github Repo</a>
+                    </div>
+                </div>
+
+
+
+            <script>
+                let slideIndex = 1;
+                showSlides(slideIndex);
+                
+                function plusSlides(n) {
+                  showSlides(slideIndex += n);
+                }
+                
+                function currentSlide(n) {
+                  showSlides(slideIndex = n);
+                }
+                
+                function showSlides(n) {
+                  let i;
+                  let slides = document.getElementsByClassName("mySlides");
+                  let dots = document.getElementsByClassName("dot");
+                  if (n > slides.length) {slideIndex = 1}    
+                  if (n < 1) {slideIndex = slides.length}
+                  for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";  
+                  }
+                  for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                  }
+                  slides[slideIndex-1].style.display = "block";  
+                  dots[slideIndex-1].className += " active";
+                }
+                </script>
+        </div>
+    </body>
+    <!-- &#10094; &#10095;-->
+</html>
